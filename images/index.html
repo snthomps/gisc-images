@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Suit Category</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .main-images {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .container {
+      position: relative;
+      margin: 10px;
+      text-align: center;
+    }
+    .container img {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">Select Your Suit Category</h2>
+  <div class="main-images">
+    <div class="container">
+      <img src="https://snthomps.github.io/gisc-images/images/men_suit_blue.png" alt="Men" onclick="goToSidebar('men')">
+      <p>Men</p>
+    </div>
+    <div class="container">
+      <img src="https://snthomps.github.io/gisc-images/images/women_sui_blue.png" alt="Women" onclick="goToSidebar('women')">
+      <p>Women</p>
+    </div>
+    <div class="container">
+      <img src="https://snthomps.github.io/gisc-images/images/kids_suit.png" alt="Kids" onclick="goToSidebar('kids')">
+      <p>Kids</p>
+    </div>
+  </div>
+
+  <script>
+    function goToSidebar(category) {
+      window.location.href = `sidebar_layered_images_6.3.25.html?category=${encodeURIComponent(category)}`;
+    }
+  </script>
+</body>
+</html>
